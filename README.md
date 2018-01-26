@@ -1,4 +1,6 @@
 # z-tools
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/zguillez/z-tools.svg)](https://greenkeeper.io/)
 Nodejs tools
 
 ## Install
