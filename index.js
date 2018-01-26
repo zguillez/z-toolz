@@ -3,4 +3,4 @@
  *
  * @type {Zssh}
  */
-module.exports = require('./src/Zssh.js');
+module.exports = require('./src/Ztools.js');

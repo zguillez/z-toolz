@@ -8,9 +8,9 @@ const zfile = require('z-file');
 const conn = new SSH();
 /**
  *
- * Class Zssh
+ * Class Ztools
  */
-class Zssh {
+class Ztools {
   /**
    * Constructor
    */
@@ -18,7 +18,7 @@ class Zssh {
     /**
      * Ruta del archivo de configuración
      */
-    this.config = path.resolve(__dirname, './ssh.json');
+    this.config = path.resolve(__dirname, './sshconfig.json');
     /**
      * Archivo de configuración
      */
@@ -26,7 +26,7 @@ class Zssh {
   }
 
   /**
-   * Ruta del fiechero de configuración
+   * Ruta del fichero de configuración
    * @param {string} file - Ruta del fichero de configuración
    */
   set config(file) {
@@ -34,7 +34,7 @@ class Zssh {
   }
 
   /**
-   * Ruta del fiechero de configuración
+   * Ruta del fichero de configuración
    * @returns {string} config - Ruta del fichero de configuración
    */
   get config() {
@@ -252,6 +252,6 @@ class Zssh {
 }
 /**
  *
- * @type {ConnectionSSH}
+ * @type {Ztools}
  */
-module.exports = new Zssh();
+module.exports = new Ztools();

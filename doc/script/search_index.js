@@ -1,14 +1,14 @@
 window.esdocSearchIndex = [
   [
     "z-ssh/z-ssh/src/zssh.js~zssh",
-    "class/z-ssh/src/Zssh.js~Zssh.html",
-    "<span>Zssh</span> <span class=\"search-result-import-path\">z-ssh/z-ssh/src/Zssh.js</span>",
+    "class/z-ssh/src/Ztools.js~Zssh.html",
+    "<span>Zssh</span> <span class=\"search-result-import-path\">z-ssh/z-ssh/src/Ztools.js</span>",
     "class"
   ],
   [
     "z-ssh/z-ssh/src/zssh.js~zssh",
     "variable/index.html#static-variable-zssh",
-    "<span>zssh</span> <span class=\"search-result-import-path\">z-ssh/z-ssh/src/Zssh.js</span>",
+    "<span>zssh</span> <span class=\"search-result-import-path\">z-ssh/z-ssh/src/Ztools.js</span>",
     "variable"
   ],
   [
@@ -3925,80 +3925,80 @@ window.esdocSearchIndex = [
   ],
   [
     "z-ssh/src/zssh.js",
-    "file/z-ssh/src/Zssh.js.html",
-    "z-ssh/src/Zssh.js",
+    "file/z-ssh/src/Ztools.js.html",
+    "z-ssh/src/Ztools.js",
     "file"
   ],
   [
     "z-ssh/src/zssh.js~zssh#checkconfig",
-    "class/z-ssh/src/Zssh.js~Zssh.html#instance-method-checkConfig",
-    "z-ssh/src/Zssh.js~Zssh#checkConfig",
+    "class/z-ssh/src/Ztools.js~Zssh.html#instance-method-checkConfig",
+    "z-ssh/src/Ztools.js~Zssh#checkConfig",
     "method"
   ],
   [
     "z-ssh/src/zssh.js~zssh#close",
-    "class/z-ssh/src/Zssh.js~Zssh.html#instance-method-close",
-    "z-ssh/src/Zssh.js~Zssh#close",
+    "class/z-ssh/src/Ztools.js~Zssh.html#instance-method-close",
+    "z-ssh/src/Ztools.js~Zssh#close",
     "method"
   ],
   [
     "z-ssh/src/zssh.js~zssh#config",
-    "class/z-ssh/src/Zssh.js~Zssh.html#instance-get-config",
-    "z-ssh/src/Zssh.js~Zssh#config",
+    "class/z-ssh/src/Ztools.js~Zssh.html#instance-get-config",
+    "z-ssh/src/Ztools.js~Zssh#config",
     "member"
   ],
   [
     "z-ssh/src/zssh.js~zssh#config",
-    "class/z-ssh/src/Zssh.js~Zssh.html#instance-set-config",
-    "z-ssh/src/Zssh.js~Zssh#config",
+    "class/z-ssh/src/Ztools.js~Zssh.html#instance-set-config",
+    "z-ssh/src/Ztools.js~Zssh#config",
     "member"
   ],
   [
     "z-ssh/src/zssh.js~zssh#configdata",
-    "class/z-ssh/src/Zssh.js~Zssh.html#instance-member-configData",
-    "z-ssh/src/Zssh.js~Zssh#configData",
+    "class/z-ssh/src/Ztools.js~Zssh.html#instance-member-configData",
+    "z-ssh/src/Ztools.js~Zssh#configData",
     "member"
   ],
   [
     "z-ssh/src/zssh.js~zssh#connect",
-    "class/z-ssh/src/Zssh.js~Zssh.html#instance-method-connect",
-    "z-ssh/src/Zssh.js~Zssh#connect",
+    "class/z-ssh/src/Ztools.js~Zssh.html#instance-method-connect",
+    "z-ssh/src/Ztools.js~Zssh#connect",
     "method"
   ],
   [
     "z-ssh/src/zssh.js~zssh#constructor",
-    "class/z-ssh/src/Zssh.js~Zssh.html#instance-constructor-constructor",
-    "z-ssh/src/Zssh.js~Zssh#constructor",
+    "class/z-ssh/src/Ztools.js~Zssh.html#instance-constructor-constructor",
+    "z-ssh/src/Ztools.js~Zssh#constructor",
     "method"
   ],
   [
     "z-ssh/src/zssh.js~zssh#download",
-    "class/z-ssh/src/Zssh.js~Zssh.html#instance-method-download",
-    "z-ssh/src/Zssh.js~Zssh#download",
+    "class/z-ssh/src/Ztools.js~Zssh.html#instance-method-download",
+    "z-ssh/src/Ztools.js~Zssh#download",
     "method"
   ],
   [
     "z-ssh/src/zssh.js~zssh#exec",
-    "class/z-ssh/src/Zssh.js~Zssh.html#instance-method-exec",
-    "z-ssh/src/Zssh.js~Zssh#exec",
+    "class/z-ssh/src/Ztools.js~Zssh.html#instance-method-exec",
+    "z-ssh/src/Ztools.js~Zssh#exec",
     "method"
   ],
   [
     "z-ssh/src/zssh.js~zssh#prompt",
-    "class/z-ssh/src/Zssh.js~Zssh.html#instance-method-prompt",
-    "z-ssh/src/Zssh.js~Zssh#prompt",
+    "class/z-ssh/src/Ztools.js~Zssh.html#instance-method-prompt",
+    "z-ssh/src/Ztools.js~Zssh#prompt",
     "method"
   ],
   [
     "z-ssh/src/zssh.js~zssh#shell",
-    "class/z-ssh/src/Zssh.js~Zssh.html#instance-method-shell",
-    "z-ssh/src/Zssh.js~Zssh#shell",
+    "class/z-ssh/src/Ztools.js~Zssh.html#instance-method-shell",
+    "z-ssh/src/Ztools.js~Zssh#shell",
     "method"
   ],
   [
     "z-ssh/src/zssh.js~zssh#upload",
-    "class/z-ssh/src/Zssh.js~Zssh.html#instance-method-upload",
-    "z-ssh/src/Zssh.js~Zssh#upload",
+    "class/z-ssh/src/Ztools.js~Zssh.html#instance-method-upload",
+    "z-ssh/src/Ztools.js~Zssh#upload",
     "method"
   ]
 ]
