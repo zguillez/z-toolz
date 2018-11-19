@@ -1,6 +1,6 @@
 {
   "name": "z-tools",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "Tools for nodejs",
   "author": {
     "name": "Guillermo de la Iglesia",
@@ -14,31 +14,31 @@
     "zguillez"
   ],
   "main": "index.js",
+  "bin": {
+    "ztools": "index-cli.js"
+  },
   "scripts": {
-    "test": "bin/test.js",
+    "test": "bin/test.js --major",
     "lint": "eslint index.js bin/*.js --fix || true",
-    "doc": "rimraf doc/* && esdoc",
     "clean": "rimraf .temp/*"
   },
   "devDependencies": {
-    "minimist": "latest",
-    "colors": "latest",
-    "copy": "latest",
-    "del": "latest",
-    "rimraf": "latest",
-    "esdoc": "latest",
-    "esdoc-node": "latest",
-    "esdoc-node-plugin": "latest",
-    "eslint": "latest",
-    "eslint-config-google": "latest",
-    "eslint-plugin-html": "latest"
+    "eslint": "^5.9.0",
+    "eslint-config-google": "^0.11.0",
+    "eslint-plugin-html": "^5.0.0",
+    "minimist": "^1.2.0"
   },
   "dependencies": {
-    "file-type": "latest",
-    "node-ssh": "latest",
-    "prompt": "latest",
-    "shelljs": "latest",
-    "z-file": "latest"
+    "colors": "^1.3.2",
+    "copy": "^0.3.2",
+    "del": "^3.0.0",
+    "file-type": "^10.5.0",
+    "node-ssh": "^5.1.2",
+    "prompt": "^1.0.0",
+    "replace": "^1.0.0",
+    "shelljs": "^0.8.3",
+    "z-file": "^0.4.1",
+    "rimraf": "^2.6.2"
   },
   "license": "MIT"
 }
