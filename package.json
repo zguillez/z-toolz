@@ -1,6 +1,6 @@
 {
   "name": "z-toolz",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Tools for NodeJS development",
   "author": {
     "name": "Guillermo de la Iglesia",
@@ -37,10 +37,9 @@
     "node-ssh": "^5.1.2",
     "prompt": "^1.0.0",
     "remote-exec": "^0.0.3",
-    "replace": "^1.0.0",
     "rimraf": "^2.6.2",
     "shelljs": "^0.8.3",
-    "z-file": "^0.4.1"
+    "z-file": "^0.4.4"
   },
   "license": "MIT"
 }

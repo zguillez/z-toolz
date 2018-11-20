@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const colors = require('colors');
-const replace = require('replace');
+const file = require('z-file');
 const config = JSON.parse(fs.readFileSync(path.resolve('./package.json'), 'utf8'));
 
 const version = (argv) => {
@@ -17,12 +17,7 @@ const version = (argv) => {
   } else {
     version[2] = Number(version[2]) + 1;
   }
-  replace({
-    regex: `"version": "${config.version}"`,
-    replacement: `"version": "${version.join('.')}"`,
-    paths: ['package.json'],
-    silent: true,
-  });
+  file.replace('./package.json', `"version": "${config.version}"`, `"version": "${version.join('.')}"`);
   console.log(`=> Package update to version`.green, `${version.join('.')}`.yellow);
 };
 
