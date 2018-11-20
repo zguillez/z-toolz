@@ -1,6 +1,6 @@
 {
-  "name": "z-tools",
-  "version": "1.0.2",
+  "name": "z-toolz",
+  "version": "0.1.2",
   "description": "Tools for NodeJS development",
   "author": {
     "name": "Guillermo de la Iglesia",
