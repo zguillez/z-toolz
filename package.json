@@ -1,7 +1,7 @@
 {
   "name": "z-tools",
-  "version": "1.0.1",
-  "description": "Tools for nodejs",
+  "version": "1.0.2",
+  "description": "Tools for NodeJS development",
   "author": {
     "name": "Guillermo de la Iglesia",
     "email": "mail@zguillez.io",
@@ -18,7 +18,6 @@
     "ztools": "index-cli.js"
   },
   "scripts": {
-    "test": "bin/test.js --major",
     "lint": "eslint index.js bin/*.js --fix || true",
     "clean": "rimraf .temp/*"
   },

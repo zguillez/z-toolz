@@ -1,12 +1,12 @@
 {
   "name": "example",
-  "version": "2.10.0",
+  "version": "1.1.0",
   "description": "",
+  "author": "",
   "main": "index.js",
   "scripts": {
-    "test": "ztools --version --minor",
-    "test2": "./index.js"
+    "test": "./index.js",
+    "test:cli": "ztools --version --minor"
   },
-  "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }

@@ -258,7 +258,7 @@ class Ztools {
    * version module run
    */
   version(argv) {
-    zversion.run(argv);
+    zversion.version(argv);
   }
 }
 
