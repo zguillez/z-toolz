@@ -7,7 +7,7 @@
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
 
-## NodeJS toolz foe web development
+## Tools for NodeJS development
 
 # Getting Started
 ## Install
