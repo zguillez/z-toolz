@@ -40,6 +40,28 @@ ztoolz --version --minor
 ztoolz --version --major
 ```
 
+## DataBase query
+Database configuration file: ```.zconfig```
+```
+{
+  "database": {
+    "host": "",
+    "username": "",
+    "password": "",
+    "database": ""
+  }
+}
+```
+ztoolz.database('SELECT * FROM table');
+ztoolz.database(['SELECT * FROM table1', 'SELECT * FROM table2'], true);
+```
+```
+ztoolz.database('SELECT * FROM table', false).then((data) => {
+  console.log(data);
+  });
+});
+```
+
 # Contributing and issues
 Contributors are welcome, please fork and send pull requests! If you have any ideas on how to make this project better then please submit an issue or send me an [email](mailto:mail@zguillez.io).
 
@@ -49,6 +71,9 @@ Contributors are welcome, please fork and send pull requests! If you have any id
 Original code licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) Open Source projects used within this project retain their original licenses.
 
 # Changelog
+
+### v0.2.0 (November 20, 2018)
+* Database module
 
 ### v0.1.0 (January 26, 2018)
 * Initial commit

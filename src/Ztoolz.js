@@ -8,6 +8,7 @@ const shell = require('shelljs');
 const SSH = require('node-ssh');
 const zfile = require('z-file');
 const zversion = require('../bin/version');
+const zdatabase = require('../bin/database');
 const conn = new SSH();
 
 /**
@@ -255,10 +256,21 @@ class Ztoolz {
   }
 
   /**
-   * version module run
+   * version module
    */
   version(argv) {
     zversion.version(argv);
+  }
+
+  /**
+   * database module
+   */
+  database(argv, isArray = false) {
+    if (isArray) {
+      return zdatabase.queries(argv);
+    } else {
+      return zdatabase.query(argv);
+    }
   }
 }
 

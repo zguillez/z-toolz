@@ -1,11 +1,10 @@
 /* eslint no-unused-vars: "off", no-restricted-modules: "off", require-jsdoc: "off" */
 const fs = require('fs');
 const path = require('path');
-const argv = require('minimist')(process.argv.slice(2));
 const colors = require('colors');
 const rexec = require('remote-exec');
 const mysql = require('mysql');
-const config = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../.sshconfig'), 'utf8'));
+const config = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../.zconfig'), 'utf8'));
 const options = {
   host: config.database.host,
   user: config.database.username,
@@ -28,29 +27,34 @@ const queryHelper = (query, index, data) => {
 const queriesExecute = (q, index = 0) => {
   connection = mysql.createConnection(options);
   const queries = q;
-  new Promise((resolve, reject) => {
-    console.log(`${queries[index]}`.yellow);
-    connection.query(queries[index], (err, row) => {
-      if (err) {
-        reject(err);
-      } else {
-        console.log(`done!`.green);
-        resolve(row);
-      }
-    });
-  })
-      .then((data) => {
-        if (index < queries.length - 1) {
-          index ++;
-          queryHelper(queries, index, {id: data.insertId});
-          queriesExecute(queries, index);
+  return new Promise((resolve, reject) => {
+    new Promise((resolve, reject) => {
+      console.log(`${queries[index]}`.yellow);
+      connection.query(queries[index], (err, row) => {
+        if (err) {
+          reject(err);
         } else {
-          connection.end();
+          console.log(`done!`.green);
+          resolve(row);
         }
-      })
-      .catch((err) => {
-        queryError(err, queries[index]);
       });
+    })
+        .then((data) => {
+          if (index < queries.length - 1) {
+            index ++;
+            queryHelper(queries, index, {id: data.insertId});
+            connection.end();
+            queriesExecute(queries, index);
+          } else {
+            connection.end();
+            console.log(`done!`.blue);
+            resolve(data);
+          }
+        })
+        .catch((err) => {
+          queryError(err, queries[index]);
+        });
+  });
 };
 const queryExecute = (q) => {
   connection = mysql.createConnection(options);
@@ -77,6 +81,6 @@ const queryExecute = (q) => {
   });
 };
 // -----------------------------------
-exports.query = queryExecute;
-exports.queries = queriesExecute;
+module.exports.query = queryExecute;
+module.exports.queries = queriesExecute;
 
