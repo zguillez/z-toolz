@@ -1,43 +1,43 @@
-# z-tools
+# z-toolz
 
-[![npm version](https://badge.fury.io/js/z-tools.svg)](https://badge.fury.io/js/z-tools)
-[![Build Status](https://travis-ci.org/zguillez/z-tools.svg?branch=master)](https://travis-ci.org/zguillez/z-tools)
-[![Installs](https://img.shields.io/npm/dt/z-tools.svg)](https://coveralls.io/r/zguillez/z-tools)
-[![Gitter](https://badges.gitter.im/zguillez/z-tools.svg)](https://gitter.im/zguillez/z-tools?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![npm version](https://badge.fury.io/js/z-toolz.svg)](https://badge.fury.io/js/z-toolz)
+[![Build Status](https://travis-ci.org/zguillez/z-toolz.svg?branch=master)](https://travis-ci.org/zguillez/z-toolz)
+[![Installs](https://img.shields.io/npm/dt/z-toolz.svg)](https://coveralls.io/r/zguillez/z-toolz)
+[![Gitter](https://badges.gitter.im/zguillez/z-toolz.svg)](https://gitter.im/zguillez/z-toolz?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > [Zguillez](https://zguillez.io) | Guillermo de la Iglesia
 
-## NodeJS tools foe web development
+## NodeJS toolz foe web development
 
 # Getting Started
 ## Install
 ```
-npm i z-tools --save-dev
-yarn add z-tools --dev
+npm i z-toolz --save-dev
+yarn add z-toolz --dev
 ```
 
 # Usage
 ```
-const ztools = require('z-tools');
+const ztoolz = require('z-toolz');
 ```
 
 # CLI Usage
 ```
 "scripts": {
-    "test": "ztools"
+    "test": "ztoolz"
   }
 ```
 
 ## Update package version
 ```
-ztools.version();
-ztools.version('minor');
-ztools.version('major');
+ztoolz.version();
+ztoolz.version('minor');
+ztoolz.version('major');
 ```
 ```
-ztools --version
-ztools --version --minor
-ztools --version --major
+ztoolz --version
+ztoolz --version --minor
+ztoolz --version --major
 ```
 
 # Contributing and issues

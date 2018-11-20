@@ -1,6 +1,6 @@
 #!/usr/local/bin/node
-const ztools = require('../src/Ztools');
+const ztoolz = require('../src/Ztoolz');
 
-ztools.version();
-// ztools.version('minor');
-// ztools.version('major');
+ztoolz.version();
+// ztoolz.version('minor');
+// ztoolz.version('major');

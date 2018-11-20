@@ -1,13 +1,13 @@
 #! /usr/local/bin/node
-const ztools = require('./index');
+const ztoolz = require('./index');
 const argv = require('minimist')(process.argv.slice(2));
 
 if (argv.v || argv.version) {
   if (argv.major) {
-    ztools.version('major');
+    ztoolz.version('major');
   } else if (argv.minor) {
-    ztools.version('minor');
+    ztoolz.version('minor');
   } else {
-    ztools.version();
+    ztoolz.version();
   }
 }

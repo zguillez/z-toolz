@@ -15,7 +15,7 @@
   ],
   "main": "index.js",
   "bin": {
-    "ztools": "index-cli.js"
+    "ztoolz": "index-cli.js"
   },
   "scripts": {
     "lint": "eslint index.js bin/*.js --fix || true",

@@ -12,9 +12,9 @@ const conn = new SSH();
 
 /**
  *
- * Class Ztools
+ * Class Ztoolz
  */
-class Ztools {
+class Ztoolz {
   /**
    * Constructor
    */
@@ -264,6 +264,6 @@ class Ztools {
 
 /**
  *
- * @type {Ztools}
+ * @type {Ztoolz}
  */
-module.exports = new Ztools();
+module.exports = new Ztoolz();
