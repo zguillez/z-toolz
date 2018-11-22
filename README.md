@@ -52,9 +52,12 @@ Database configuration file: ```.zconfig```
   }
 }
 ```
+
+```
 ztoolz.database('SELECT * FROM table');
 ztoolz.database(['SELECT * FROM table1', 'SELECT * FROM table2'], true);
 ```
+
 ```
 ztoolz.database('SELECT * FROM table', false).then((data) => {
   console.log(data);
