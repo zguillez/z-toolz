@@ -1,7 +1,8 @@
 {
   "name": "z-toolz",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Tools for NodeJS development",
+  "homepage": "https://zguillez.tools",
   "author": {
     "name": "Guillermo de la Iglesia",
     "email": "mail@zguillez.io",
