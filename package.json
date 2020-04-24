@@ -1,6 +1,6 @@
 {
   "name": "z-toolz",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Tools for NodeJS development",
   "keywords": [
     "tools",
@@ -21,36 +21,32 @@
   },
   "scripts": {
     "clean": "rimraf .temp/*",
-    "doc": "rimraf doc/* && esdoc",
     "lint": "eslint index.js bin/*.js --fix || true",
     "prepare": "npm run lint && npm run test && sort-package-json &&  bin/prepare.js",
     "test": "jest --coverage",
-    "test_": "bin/test.js"
+    "test_": "node ./example/index.js"
   },
   "dependencies": {
     "colors": "^1.4.0",
     "copy": "^0.3.2",
     "del": "^5.1.0",
     "file-type": "^14.2.0",
+    "minimist": "^1.2.5",
     "mysql": "^2.18.1",
     "node-ssh": "^8.0.0",
     "prompt": "^1.0.0",
     "remote-exec": "^0.0.3",
+    "replace": "^1.2.0",
     "rimraf": "^3.0.2",
     "shelljs": "^0.8.3",
-    "z-file": "^0.5.8"
+    "z-file": "^0.5.13",
+    "z-ssh": "^0.1.28"
   },
   "devDependencies": {
-    "esdoc": "1.1.0",
-    "esdoc-node": "1.0.5",
-    "esdoc-node-plugin": "0.2.1",
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-html": "^6.0.2",
     "jest": "^25.4.0",
-    "minimist": "^1.2.5",
-    "replace": "^1.2.0",
-    "rimraf": "3.0.2",
     "sort-package-json": "^1.42.1"
   }
 }

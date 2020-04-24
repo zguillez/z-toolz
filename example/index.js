@@ -1,4 +1,3 @@
-#!/usr/local/bin/node
 const ztoolz = require('../src/Ztoolz');
 
 ztoolz.version();
