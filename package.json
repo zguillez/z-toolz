@@ -1,6 +1,6 @@
 {
   "name": "z-toolz",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Tools for NodeJS development",
   "keywords": [
     "tools",
@@ -23,21 +23,9 @@
     "clean": "rimraf .temp/*",
     "doc": "rimraf doc/* && esdoc",
     "lint": "eslint index.js bin/*.js --fix || true",
-    "prepare": "npm run lint && npm run test && bin/prepare.js",
+    "prepare": "npm run lint && npm run test && sort-package-json &&  bin/prepare.js",
     "test": "jest --coverage",
     "test_": "bin/test.js"
-  },
-  "devDependencies": {
-    "esdoc": "1.1.0",
-    "esdoc-node": "1.0.5",
-    "esdoc-node-plugin": "0.2.1",
-    "eslint": "^6.8.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-html": "^6.0.2",
-    "jest": "^25.4.0",
-    "minimist": "^1.2.5",
-    "replace": "^1.2.0",
-    "sort-package-json": "^1.42.1"
   },
   "dependencies": {
     "colors": "^1.4.0",
@@ -51,5 +39,18 @@
     "rimraf": "^3.0.2",
     "shelljs": "^0.8.3",
     "z-file": "^0.5.8"
+  },
+  "devDependencies": {
+    "esdoc": "1.1.0",
+    "esdoc-node": "1.0.5",
+    "esdoc-node-plugin": "0.2.1",
+    "eslint": "^6.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-html": "^6.0.2",
+    "jest": "^25.4.0",
+    "minimist": "^1.2.5",
+    "replace": "^1.2.0",
+    "rimraf": "3.0.2",
+    "sort-package-json": "^1.42.1"
   }
 }
