@@ -1,2 +1,5 @@
-#! /usr/local/bin/node
+'use strict';
+/**
+ * @type {Ztoolz}
+ */
 module.exports = require('./src/Ztoolz.js');

@@ -4,7 +4,6 @@ const path = require('path');
 const colors = require('colors');
 const file = require('z-file');
 const config = JSON.parse(fs.readFileSync(path.resolve('./package.json'), 'utf8'));
-
 const version = (argv) => {
   const version = config.version.split('.');
   if (argv === 'major') {
@@ -20,5 +19,4 @@ const version = (argv) => {
   file.replace('./package.json', `"version": "${config.version}"`, `"version": "${version.join('.')}"`);
   console.log(`=> Package update to version`.green, `${version.join('.')}`.yellow);
 };
-
 module.exports.version = version;

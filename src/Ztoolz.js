@@ -1,7 +1,5 @@
 'use strict';
-/* eslint no-unused-vars: "off", no-restricted-modules: "off", valid-jsdoc: "off" */
-
-require('colors');
+const colors = require('colors');
 const path = require('path');
 const prompt = require('prompt');
 const shell = require('shelljs');
@@ -12,7 +10,6 @@ const zdatabase = require('../bin/database');
 const conn = new SSH();
 
 /**
- *
  * Class Ztoolz
  */
 class Ztoolz {
@@ -199,7 +196,7 @@ class Ztoolz {
     const schema = {
       properties: {},
     };
-    if (! data.host) {
+    if (!data.host) {
       schema.properties.host = {
         description: `host`.yellow,
         pattern: /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/,
@@ -208,7 +205,7 @@ class Ztoolz {
         required: true,
       };
     }
-    if (! data.username) {
+    if (!data.username) {
       schema.properties.username = {
         description: `username`.yellow,
         pattern: /^\w+$/,
@@ -217,7 +214,7 @@ class Ztoolz {
         required: true,
       };
     }
-    if (! data.password) {
+    if (!data.password) {
       schema.properties.password = {
         description: `password`.yellow,
         pattern: /^[a-zA-Z0-9]+$/,
@@ -226,7 +223,7 @@ class Ztoolz {
         required: true,
       };
     }
-    if (! data.local) {
+    if (!data.local) {
       schema.properties.local = {
         description: `local folder`.yellow,
         pattern: /^\w+$/,
@@ -235,7 +232,7 @@ class Ztoolz {
         required: true,
       };
     }
-    if (! data.remote) {
+    if (!data.remote) {
       schema.properties.remote = {
         description: `remote folder`.yellow,
         pattern: /^\w+$/,

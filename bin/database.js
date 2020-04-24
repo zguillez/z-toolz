@@ -1,4 +1,3 @@
-/* eslint no-unused-vars: "off", no-restricted-modules: "off", require-jsdoc: "off" */
 const fs = require('fs');
 const path = require('path');
 const colors = require('colors');
@@ -41,7 +40,7 @@ const queriesExecute = (q, index = 0) => {
     })
         .then((data) => {
           if (index < queries.length - 1) {
-            index ++;
+            index++;
             queryHelper(queries, index, {id: data.insertId});
             connection.end();
             queriesExecute(queries, index);
