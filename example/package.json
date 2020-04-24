@@ -10,6 +10,6 @@
     "test:cli": "ztoolz --version --minor"
   },
   "dependencies": {
-    "z-toolz": "^0.2.1"
+    "z-toolz": "^0.2.8"
   }
 }
