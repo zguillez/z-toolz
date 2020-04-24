@@ -1,6 +1,6 @@
 {
   "name": "z-toolz",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Tools for NodeJS development",
   "keywords": [
     "tools",
@@ -30,7 +30,6 @@
     "colors": "^1.4.0",
     "copy": "^0.3.2",
     "del": "^5.1.0",
-    "file-type": "^14.2.0",
     "minimist": "^1.2.5",
     "mysql": "^2.18.1",
     "node-ssh": "^8.0.0",

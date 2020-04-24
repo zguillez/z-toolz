@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "1.1.14",
+  "version": "1.2.0",
   "description": "",
   "license": "MIT",
   "author": "",
@@ -8,5 +8,8 @@
   "scripts": {
     "test": "node ./index.js",
     "test:cli": "ztoolz --version --minor"
+  },
+  "dependencies": {
+    "z-toolz": "^0.2.1"
   }
 }
