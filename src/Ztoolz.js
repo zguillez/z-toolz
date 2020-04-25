@@ -259,7 +259,8 @@ class Ztoolz {
    * version module
    */
   version(argv) {
-    const config = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../package.json'), 'utf8'));
+    const packagePath = path.resolve(__dirname, '../package.json');
+    const config = JSON.parse(fs.readFileSync(packagePath, 'utf8'));
     const version = config.version.split('.');
     if (argv === 'major') {
       version[0] = Number(version[0]) + 1;
@@ -271,7 +272,7 @@ class Ztoolz {
     } else {
       version[2] = Number(version[2]) + 1;
     }
-    zfile.replace('../package.json', `"version": "${config.version}"`, `"version": "${version.join('.')}"`);
+    zfile.replace(packagePath, `"version": "${config.version}"`, `"version": "${version.join('.')}"`);
     console.log(`=> Package update to version`.green, `${version.join('.')}`.yellow);
   }
 

@@ -1,6 +1,6 @@
 {
   "name": "z-toolz",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "description": "Tools for NodeJS development",
   "keywords": [
     "tools",
@@ -39,7 +39,7 @@
     "replace": "^1.2.0",
     "rimraf": "^3.0.2",
     "shelljs": "^0.8.3",
-    "z-file": "^0.5.18",
+    "z-file": "^0.5.19",
     "z-ssh": "^0.1.28"
   },
   "devDependencies": {
