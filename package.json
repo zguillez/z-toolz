@@ -1,6 +1,6 @@
 {
   "name": "z-toolz",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "description": "Tools for NodeJS development",
   "keywords": [
     "tools",
@@ -29,24 +29,24 @@
   "dependencies": {
     "colors": "^1.4.0",
     "copy": "^0.3.2",
-    "del": "^5.1.0",
-    "file-type": "^14.2.0",
+    "del": "^6.0.0",
+    "file-type": "^16.5.3",
     "minimist": "^1.2.5",
     "mysql": "^2.18.1",
-    "node-ssh": "^8.0.0",
-    "prompt": "^1.0.0",
+    "node-ssh": "^12.0.0",
+    "prompt": "^1.1.0",
     "remote-exec": "^0.0.3",
-    "replace": "^1.2.0",
+    "replace": "^1.2.1",
     "rimraf": "^3.0.2",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.4",
     "z-file": "^0.5.19",
     "z-ssh": "^0.1.28"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^7.32.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-html": "^6.0.2",
-    "jest": "^25.4.0",
-    "sort-package-json": "^1.42.1"
+    "eslint-plugin-html": "^6.1.2",
+    "jest": "^27.0.6",
+    "sort-package-json": "^1.50.0"
   }
 }
