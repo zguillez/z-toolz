@@ -1,6 +1,6 @@
 {
   "name": "z-toolz",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "description": "Tools for NodeJS development",
   "keywords": [
     "tools",
@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "colors": "^1.4.0",
-    "copy": "^0.0.1",
+    "copy": "^0.3.2",
     "del": "^6.0.0",
     "file-type": "^16.5.3",
     "minimist": "^1.2.5",
@@ -39,8 +39,8 @@
     "replace": "^1.2.1",
     "rimraf": "^3.0.2",
     "shelljs": "^0.8.4",
-    "z-file": "^0.5.19",
-    "z-ssh": "^0.1.1"
+    "z-file": "^0.5.22",
+    "z-ssh": "^0.1.38"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
