@@ -12,8 +12,8 @@
 # Getting Started
 ## Install
 ```
-npm i z-toolz --save-dev
-yarn add z-toolz --dev
+npm i @zguillez/z-toolz --save-dev
+yarn add @zguillez/z-toolz --dev
 ```
 
 # Usage
