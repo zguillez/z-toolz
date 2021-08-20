@@ -1,6 +1,6 @@
 {
   "name": "@zguillez/z-toolz",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Tools for NodeJS development",
   "keywords": [
     "tools",
@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "@zguillez/z-file": "^0.6.6",
+    "@zguillez/z-git": "^0.1.18",
+    "@zguillez/z-log": "^0.1.15",
     "@zguillez/z-ssh": "^0.2.9",
     "@zguillez/z-version": "^2.0.1",
     "copy": "^0.3.2",
@@ -43,8 +45,6 @@
     "shelljs": "^0.8.4"
   },
   "devDependencies": {
-    "@zguillez/z-git": "^0.1.18",
-    "@zguillez/z-log": "^0.1.15",
     "eslint": "^7.32.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-html": "^6.1.2",
