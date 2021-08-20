@@ -2,16 +2,12 @@
 const fs = require('fs');
 const path = require('path');
 const prompt = require('prompt');
-const argv = require('minimist')(process.argv.slice(2));
-const colors = require('colors');
-const replace = require('replace');
 const shell = require('shelljs');
-const SSH = require('node-ssh');
-const zversion = require('z-version');
-const zfile = require('z-file');
-const fileType = require('file-type');
+const zversion = require('@zguillez/z-version');
+const zfile = require('@zguillez/z-file');
+const zssh = require('@zguillez/z-ssh');
+
 // const zdatabase = require('../bin/database');
-const conn = new SSH();
 
 /**
  * Class Ztoolz
