@@ -7,6 +7,7 @@ const colors = require('colors');
 const replace = require('replace');
 const shell = require('shelljs');
 const SSH = require('node-ssh');
+const zversion = require('z-version');
 const zfile = require('z-file');
 const fileType = require('file-type');
 // const zdatabase = require('../bin/database');
@@ -259,21 +260,7 @@ class Ztoolz {
    * version module
    */
   version(argv) {
-    const packagePath = path.resolve(__dirname, '../package.json');
-    const config = JSON.parse(fs.readFileSync(packagePath, 'utf8'));
-    const version = config.version.split('.');
-    if (argv === 'major') {
-      version[0] = Number(version[0]) + 1;
-      version[1] = 0;
-      version[2] = 0;
-    } else if (argv === 'minor') {
-      version[1] = Number(version[1]) + 1;
-      version[2] = 0;
-    } else {
-      version[2] = Number(version[2]) + 1;
-    }
-    zfile.replace(packagePath, `"version": "${config.version}"`, `"version": "${version.join('.')}"`);
-    console.log(`=> Package update to version`.green, `${version.join('.')}`.yellow);
+    zversion.update(argv);
   }
 
   /**
